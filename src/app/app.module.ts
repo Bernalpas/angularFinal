@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { FooterComponent } from './Componente/footer/footer.component';
 import { MainComponent } from './Componente/main/main.component';
@@ -10,7 +12,7 @@ import { ProductosComponent } from './Paginas/productos/productos.component';
 import { ContactoComponent } from './Paginas/contacto/contacto.component';
 import { FormularioComponent } from './Paginas/formulario/formulario.component';
 import { AppRoutingModule } from './app-routing.module';
-import { PruebaComponent } from './Componente/prueba/prueba.component';
+
 
 @NgModule({
   declarations: [
@@ -21,12 +23,12 @@ import { PruebaComponent } from './Componente/prueba/prueba.component';
     NosotrosComponent,
     ProductosComponent,
     ContactoComponent,
-    FormularioComponent,
-    PruebaComponent
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

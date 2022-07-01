@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { InfoPaginaService } from 'src/app/Servicio/info-pagina.service';
 @Component({
   selector: 'app-nosotros',
   templateUrl: './nosotros.component.html',
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NosotrosComponent implements OnInit {
 
-  constructor() { }
+  constructor(public infoservicio: InfoPaginaService) { }
 
   ngOnInit(): void {
   }

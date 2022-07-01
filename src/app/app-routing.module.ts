@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 
 import { Routes, RouterModule } from '@angular/router';
+
+
 import { MainComponent } from './Componente/main/main.component';
 import { ContactoComponent } from './Paginas/contacto/contacto.component';
 import { FormularioComponent } from './Paginas/formulario/formulario.component';
